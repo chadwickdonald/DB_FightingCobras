@@ -8,14 +8,12 @@ module Drive_or_bart
       @json_file = json_file
     end
 
-    def travel_time
-      route_info_finder
-      if @transit_counter > 0
-        duration = ((@json_file["routes"][0]["legs"][0]["arrival_time"]["value"]) - (@json_file["routes"][0]["legs"][0]["departure_time"]["value"]))
-      else
-        duration = (@json_file["routes"][0]["legs"][0]["duration"]["value"])
-      end
-      duration
+    def travel_time_driving
+      @json_file["routes"][0]["legs"][0]["duration"]["value"]
+    end
+
+    def travel_time_pt
+      (@json_file["routes"][0]["legs"][0]["arrival_time"]["value"]) - (@json_file["routes"][0]["legs"][0]["departure_time"]["value"])
     end
 
     def travel_distance
@@ -55,7 +53,6 @@ module Drive_or_bart
     end
 
     def route_info_finder
-      @transit_counter = 0
       @toll_amount = 0
       @walk_distance = 0
       @walk_time = 0
@@ -72,8 +69,6 @@ module Drive_or_bart
           elsif (hash["html_instructions"].include?("toll road") == true)
             @toll_amount = 5
           end
-        elsif hash["travel_mode"] == "TRANSIT"
-          @transit_counter += 1
         end
       end
     end
