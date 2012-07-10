@@ -38,8 +38,30 @@ describe "driving parsing" do
     @results.walking_time.should == 0
   end
 
-  it "should know the total cost"
-    #@results.cost.should == 32
+end
+
+describe "it should calculate driving costs" do
+
+  it "should know when it's driving over a $5 toll bridge" do
+    url = "http://maps.googleapis.com/maps/api/directions/json?origin=Hayward,+CA&destination=San+Mateo,+CA&sensor=false"
+    @file = open(url) { |json_file| JSON.parse(json_file.read) }
+    @results = Drive_or_bart::Results.new(@file)
+    @results.toll_amount.should == 5
+  end
+
+  it "should know if it is driving over either the Golden Gate or Bay Bridge toll portions" do
+    url = "http://maps.googleapis.com/maps/api/directions/json?origin=Salsalito,+CA&destination=Folsom+St,+CA&sensor=false"
+    @file = open(url) { |json_file| JSON.parse(json_file.read) }
+    @results = Drive_or_bart::Results.new(@file)
+    @results.toll_amount.should == 6
+  end
+
+  it "should know the total driving cost assuming 20 mpg and 3.679 dollars/gallon rounded down to 2 decimals" do
+    url = "http://maps.googleapis.com/maps/api/directions/json?origin=Salsalito,+CA&destination=Folsom+St,+CA&sensor=false"
+    @file = open(url) { |json_file| JSON.parse(json_file.read) }
+    @results = Drive_or_bart::Results.new(@file)
+    @results.total_cost == 7.89
+  end
 end
 
 describe "transit parsing" do
@@ -50,19 +72,19 @@ describe "transit parsing" do
   end
 
   it "should know the total travel time" do
-    @results.travel_time.should == 1216
+    @results.travel_time.class.should == Fixnum
   end
 
   it "should know the total travel distance" do
-    @results.travel_distance.should == 2723
+    @results.travel_distance.class.should == Fixnum
   end
 
   it "should know when there is walking" do
-    @results.walking_distance.should == 694
+    @results.walking_distance.class.should == Fixnum
   end
 
   it "should know the total walking time" do
-    @results.walking_time.should == 474
+    @results.walking_time.class.should == Fixnum
   end
 
 end
