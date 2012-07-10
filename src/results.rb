@@ -17,23 +17,57 @@ module Drive_or_bart
     end
 
     def walking_distance
-      @walk_distance = 0
-      @json_file["routes"][0]["legs"][0]["steps"].each do |hash|
-        if hash["travel_mode"] == "WALKING"
-          @walk_distance += hash["distance"]["value"]
-        end
-      end
-      return @walk_distance
+      route_info_finder
+      @walk_distance
     end
 
     def walking_time
+      route_info_finder
+      @walk_time
+    end
+
+    def toll_amount
+      route_info_finder
+      @toll_amount
+    end
+
+    def total_cost
+      meters = travel_distance
+      miles = to_miles(meters)
+      gallons = miles / 20
+      dollars = 3.679 * gallons
+      return ((dollars* 100).floor) / 100.0
+
+    end
+
+
+
+    private
+
+    def to_miles(meters)
+      meters * 0.000621371192
+    end
+
+    def route_info_finder
+      @toll_amount = 0
+      @walk_distance = 0
       @walk_time = 0
       @json_file["routes"][0]["legs"][0]["steps"].each do |hash|
         if hash["travel_mode"] == "WALKING"
+          @walk_distance += hash["distance"]["value"]
           @walk_time += hash["duration"]["value"]
+
+        elsif hash["travel_mode"] == "DRIVING"
+          if (hash["html_instructions"].include?("toll road") == true) && (hash["html_instructions"].include?("US-101") == true)
+            @toll_amount = 6
+          elsif (hash["html_instructions"].include?("toll road") == true) && (hash["I-80"] == true)
+            @toll_amount = 6
+          elsif (hash["html_instructions"].include?("toll road") == true)
+            @toll_amount = 5
+          end
         end
       end
-      return @walk_time
     end
+
   end
 end
