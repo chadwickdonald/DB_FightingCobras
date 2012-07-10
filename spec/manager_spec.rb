@@ -53,9 +53,9 @@ describe Manager do
       @manager.should respond_to :getResults
     end
 
-    it "should return an array of two Results" do
-      @manager.getResults.should eq Array
-      @manager.results[0] is_an_instance_of Result
+    it "should return a result with a travel time" do
+      mock_result = double('result')
+      mock_result.should_receive(:to_s).match("time = 37 minutes")
     end
 
   end
