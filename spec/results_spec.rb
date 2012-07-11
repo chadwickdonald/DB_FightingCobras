@@ -46,21 +46,21 @@ describe "it should calculate driving costs" do
     url = "http://maps.googleapis.com/maps/api/directions/json?origin=Hayward,+CA&destination=San+Mateo,+CA&sensor=false"
     @file = open(url) { |json_file| JSON.parse(json_file.read) }
     @results = Drive_or_bart::Results.new(@file)
-    @results.toll_amount.should == 5
+    @results.toll_amount.should == 500
   end
 
   it "should know if it is driving over either the Golden Gate or Bay Bridge toll portions" do
     url = "http://maps.googleapis.com/maps/api/directions/json?origin=Salsalito,+CA&destination=Folsom+St,+CA&sensor=false"
     @file = open(url) { |json_file| JSON.parse(json_file.read) }
     @results = Drive_or_bart::Results.new(@file)
-    @results.toll_amount.should == 6
+    @results.toll_amount.should == 600
   end
 
   it "should know the total driving cost assuming 20 mpg and 3.679 dollars/gallon rounded down to 2 decimals" do
     url = "http://maps.googleapis.com/maps/api/directions/json?origin=Salsalito,+CA&destination=Folsom+St,+CA&sensor=false"
     @file = open(url) { |json_file| JSON.parse(json_file.read) }
     @results = Drive_or_bart::Results.new(@file)
-    @results.total_cost == 7.89
+    @results.total_cost == 789
   end
 end
 
@@ -85,6 +85,27 @@ describe "transit parsing" do
 
   it "should know the total walking time" do
     @results.walking_time.class.should == Fixnum
+  end
+
+  it "should calculate muni costs appropriately" do
+    @results.muni_checker.should == true
+  end
+end
+
+describe "bart api" do
+
+  before :all do
+    url = "http://maps.googleapis.com/maps/api/directions/json?origin=2120+Center+St.,+Berkeley,+CA&destination=717+California+St,+CA&mode=transit&sensor=false"
+    @file = open(url) { |json_file| JSON.parse(json_file.read) }
+    @results = Drive_or_bart::Results.new(@file)
+  end
+
+  it "should return the correct bart stations" do
+    @results.bart_stops.should == "dbrk embr"
+
+  end
+  it "should handle the bart api" do
+    @results.bart_fare.should == 370
   end
 
 end

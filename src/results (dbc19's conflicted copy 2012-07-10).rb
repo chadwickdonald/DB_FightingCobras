@@ -35,6 +35,10 @@ module Drive_or_bart
       @toll_amount
     end
 
+    def bart_fare
+      "3.70"
+    end
+
     def total_cost
       meters = travel_distance
       miles = to_miles(meters)
