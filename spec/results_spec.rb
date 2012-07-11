@@ -2,8 +2,11 @@ require 'simplecov'
 SimpleCov.start
 require 'rspec'
 require 'json'
+require 'fakeweb'
 require '../src/results.rb'
 require 'open-uri'
+
+FakeWeb.allow_net_connect = false
 
 describe "initialization" do
   before :each do
@@ -17,9 +20,9 @@ end
 
 describe "driving parsing" do
   before :all do
-    url = "http://maps.googleapis.com/maps/api/directions/json?origin=San+Francisco&destination=Los+Angeles&sensor=false"
-    @file = open(url) { |json_file| JSON.parse(json_file.read) }
-    @results = Drive_or_bart::Results.new(@file)
+    # stub(:open).and_return(JSON.parse(File.read('./driving_from_SF_to_LA.json')))
+    @driving_hash = JSON.parse(File.read('./driving_from_SF_to_LA.json'))
+    @results = Drive_or_bart::Results.new(@driving_hash)
   end
 
   it "should know the total travel time" do
