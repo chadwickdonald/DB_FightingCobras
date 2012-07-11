@@ -1,5 +1,6 @@
 require 'json'
 require 'crack'
+require 'open-uri'
 
 
 module Drive_or_bart
@@ -40,7 +41,7 @@ module Drive_or_bart
       @toll_amount
     end
 
-    def total_cost
+    def driving_cost
       meters = travel_distance
       miles = to_miles(meters)
       gallons = miles / 20
