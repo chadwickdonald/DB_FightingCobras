@@ -59,6 +59,7 @@ def weather_viewer
 end
 
 def traffic_getter
+  # scrapes the screen from googlemaps
   url = "http://maps.google.com/maps?q=San+Jose,+CA+to+717+California+st.,+ca"
   doc = Nokogiri::HTML(open(url))
   string = doc.css(".altroute-aux span").first.content
