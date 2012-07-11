@@ -1,0 +1,279 @@
+{
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 37.78718000000001,
+               "lng" : -122.092120
+            },
+            "southwest" : {
+               "lat" : 37.412120,
+               "lng" : -122.426270
+            }
+         },
+         "copyrights" : "Map data ©2012 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "36.4 mi",
+                  "value" : 58536
+               },
+               "duration" : {
+                  "text" : "48 mins",
+                  "value" : 2863
+               },
+               "end_address" : "668 N Rengstorff Ave, Mountain View, CA 94043, USA",
+               "end_location" : {
+                  "lat" : 37.412120,
+                  "lng" : -122.092360
+               },
+               "start_address" : "1525 Sutter St, San Francisco, CA 94109, USA",
+               "start_location" : {
+                  "lat" : 37.786990,
+                  "lng" : -122.426270
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "354 ft",
+                        "value" : 108
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 10
+                     },
+                     "end_location" : {
+                        "lat" : 37.78718000000001,
+                        "lng" : -122.425060
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eSutter St\u003c/b\u003e toward \u003cb\u003eGough St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "ugseFdkfjVe@qF"
+                     },
+                     "start_location" : {
+                        "lat" : 37.786990,
+                        "lng" : -122.426270
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.9 mi",
+                        "value" : 1475
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 250
+                     },
+                     "end_location" : {
+                        "lat" : 37.774090,
+                        "lng" : -122.422410
+                     },
+                     "html_instructions" : "Take the 1st \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGough St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "{hseFrcfjVzDi@~C_@VCzDe@vDo@~AO|ASTCjC[TC~AQ|AQ|Dc@~AMzAQzDe@zAQ|ASzAQzAQzAQhBWpAQ|AQ"
+                     },
+                     "start_location" : {
+                        "lat" : 37.78718000000001,
+                        "lng" : -122.425060
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "495 ft",
+                        "value" : 151
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 18
+                     },
+                     "end_location" : {
+                        "lat" : 37.773870,
+                        "lng" : -122.424110
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003ePage St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "awpeF`sejV\\jFDh@@R@TBR"
+                     },
+                     "start_location" : {
+                        "lat" : 37.774090,
+                        "lng" : -122.422410
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "341 ft",
+                        "value" : 104
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 21
+                     },
+                     "end_location" : {
+                        "lat" : 37.772950,
+                        "lng" : -122.423910
+                     },
+                     "html_instructions" : "Take the 2nd \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eOctavia St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "uupeFt}ejV|ASxAS"
+                     },
+                     "start_location" : {
+                        "lat" : 37.773870,
+                        "lng" : -122.424110
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "26 ft",
+                        "value" : 8
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 6
+                     },
+                     "end_location" : {
+                        "lat" : 37.772960,
+                        "lng" : -122.423820
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eHaight St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "}opeFl|ejVAQ"
+                     },
+                     "start_location" : {
+                        "lat" : 37.772950,
+                        "lng" : -122.423910
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "430 ft",
+                        "value" : 131
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 40
+                     },
+                     "end_location" : {
+                        "lat" : 37.771830,
+                        "lng" : -122.423420
+                     },
+                     "html_instructions" : "Take the 1st \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eOctavia Blvd\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "_ppeFz{ejVtAQZGLCLEPGn@WFCHG"
+                     },
+                     "start_location" : {
+                        "lat" : 37.772960,
+                        "lng" : -122.423820
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.4 mi",
+                        "value" : 703
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 101
+                     },
+                     "end_location" : {
+                        "lat" : 37.76956000000001,
+                        "lng" : -122.416460
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eCentral Fwy\u003c/b\u003e (signs for \u003cb\u003eUS-101 S/I-80\u003c/b\u003e)",
+                     "polyline" : {
+                        "points" : "}hpeFjyejVVMl@]f@YVSFEj@m@^g@DINU\\o@Re@Pq@BGLk@Ls@Hk@?ADq@B}ABu@?[D{@Bi@D{@N{AFq@?E@CHeA@GBWF}@LeBHuA"
+                     },
+                     "start_location" : {
+                        "lat" : 37.771830,
+                        "lng" : -122.423420
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "34.1 mi",
+                        "value" : 54800
+                     },
+                     "duration" : {
+                        "text" : "37 mins",
+                        "value" : 2229
+                     },
+                     "end_location" : {
+                        "lat" : 37.420780,
+                        "lng" : -122.092370
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eUS-101 S\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "wzoeFzmdjVD}@@_@Bq@@]FwE@m@DqB?O@m@?_@B}BBgCDoABq@@e@Dm@@Ot@yHNoATkDBc@@IFw@N_AR}@Vs@?ARi@N[d@y@PQDELKRMHG`@OTGj@Gd@EzAKnAUj@EB?bGW@A|@?x@?j@Db@DZD^Hr@T^HbBt@j@\\b@VnAn@B@j@Rt@Pr@JhAFj@A`@Cr@Kd@Kf@Qj@Yt@g@lAgAdAaB^i@r@kAh@s@fAkAd@[`@WFE`A[|@QnAKjESr@C~F]xAAz@HX@`BHT@jBXrDz@FBlB`@JBf@LZH`@HbAVb@Jb@J@?`GtAfCj@`C^xAXjAV|Ap@LFpAx@FD@@|AlAjDpChAx@JFhAl@`A`@t@Xj@NfAT~@NhCN\\BtAB`EUPCTCB?^I@?TExA[t@Qf@Mf@MHEv@[BAJEFEZMDCp@_@VO^OBA@AXKBAb@SZMv@a@h@[@?BCBAlAo@BATMz@e@t@]\\On@YFC`@SHEVO|BwA~F{BDCxDyAhFcBp@U~@YhBk@zJmCTEfEoAdA]^M@?^MrAc@xEwAVI|@U`@KdCs@t@Mv@OdFcARExE{@|Dq@zAa@bA[PIPI\\QFEFCBAJGVMbCyA|IwGzAw@jCcAbBa@pBYlDg@zFy@@?x@MNCLAvWiDzcAqNZGfXuDjn@yIxIwAjCWdBG~AAt@DhBB~APjBXxCv@nC~@NF|@^`@P`@PnAf@jExBjC`BhCbBbBpAlA`AXVxDlD`IpH`B~AhEfE|AtAhDvD|B~Cj@`AT^R\\l@hAvDzGpG`LxAzB`AjAnAnAnA`A`BdAbAj@hFxB~ExBfA^dAZ`ARr@NhANB?~@JH@Z@j@Dv@@n@AJ?D?F?N?XA|I[~BGtDOTApDO|Ja@zPm@fOq@jAKfAK|@MdAQhAWjAYrA_@rFoBrHiDt@Ut@SNGn@QFC~@YhAYjAS`AOzAU\\EZCfAGjH_@DAZATCl@Cv@EpDU~AKnBMjBQlAShBW`B_@nCm@~Bk@zDw@PEbXqG~KmC`E}@nEoAJA~Ak@VK?ADALGFC~As@vBsAxAeALKNMr@k@bA{@RSlBqBfAuArCaET[pD_H|BeErDsGpG}KdEuHvH_NrNgWLUBGlCyEfF}Irg@}|@tKuRhAwB|D_H~C_GHMdAiBFIf@{@Rc@\\q@\\u@Zu@Ti@Xs@b@mAd@{Al@gCd@}BVyAXgBP}AN}ANyBFwAHcBDwCBkDlAeeBBgB?gBDiBFmAP}AJw@PaA\\}Ah@qBZ_Ab@cAxG_ILO`RuTjCyCfBmBh@k@JMvK_MjGcHJMzFmGbFyFdCoC`HsHnCaDX[JKDEpBwBbIaJbAgArCgDtD_E`DmDnO}PlHiInAsAv@y@^a@jCoCz@{@FGr@q@~@}@~FcFpC_C~L_L`EwD@?bB}APQZWf@e@JKf@c@VWlAmAzFgFfAeAtBkB|BsBpEcEf@c@h@a@n@e@pRwQ@ANMzBwBjA}@pAy@^c@n@q@hAeAvAsAbB{AbA{@d@]`@U^WxA_BpLwKbFiErM_M\\[lAeApHyG`FwEvEuEl@s@lByBfGmHtIiKNQhMmOXYjEkFtEyF~A{B~GmH|CqD~@eAdEaFxDyEx@aANOtC}C|@aAlB}BlBaC|@eANQ\\a@PQZa@xAcB^e@h@m@rMqOjAoA\\a@zAcBrCiDjL_NzAgBdJuKfFcGfK_MtBcCh@k@fAwAlC_DvCsEl@kAz@eBt@iBl@aBt@eCv@eDzAyHXwA`CaMbBoIjA}G`@wB`@sBl@oCFW^uANk@`AmDfBwFrBaGrAaEjEuMnE}Mt@sCVcA@GT{@d@aBz@oDHc@DODSLk@bAcGfAcIpAeKD{@JkBhCic@NyBNwBj@qIxA}Tx@_Nz@iNn@oIv@iH`BqLvAmHzBcKV_A\\kA`A_D`AqC`AcCjBaExCyGtIoQZo@rAmCd@_ALWrByDTc@Xk@zFoLpDiHfBqDzMyXzKaUVi@pAeCjBsDjAeCNYHQDIN[Vg@\\q@dD{Gb@{@fCeFpAoCr@uAhAyBlIyP|GgNv@}AlB{DTc@xFgL@C@AJWBErDoH`@{@hCgFtBcElB{DvCyF|Ok\\dIcPx@uAj@aAzAwBvBqC~CiDrE{EJK@AvIiJb@c@FIlH}HjEuEhL}LjL}LBEXY@CNODElQoRx[e]XYTW^a@VYzJkKpBwBfEsEVWnNoOdEeFlNwSvE_H^m@FKJOHO"
+                     },
+                     "start_location" : {
+                        "lat" : 37.76956000000001,
+                        "lng" : -122.416460
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 209
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 19
+                     },
+                     "end_location" : {
+                        "lat" : 37.419650,
+                        "lng" : -122.093230
+                     },
+                     "html_instructions" : "Take the \u003cb\u003eRengstorff Ave\u003c/b\u003e exit",
+                     "polyline" : {
+                        "points" : "{vkcFhdehVr@]NIRGRCX@JBNFTPb@p@DFDJFLBH@JAJARGRG`@"
+                     },
+                     "start_location" : {
+                        "lat" : 37.420780,
+                        "lng" : -122.092370
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 847
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 169
+                     },
+                     "end_location" : {
+                        "lat" : 37.412120,
+                        "lng" : -122.092360
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eN Rengstorff Ave\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "yokcFtiehVVHf@LRBL?n@GfBOJMrDUvDOjBOp@GpFa@lK{@`AGN?"
+                     },
+                     "start_location" : {
+                        "lat" : 37.419650,
+                        "lng" : -122.093230
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "ugseFdkfjVe@qFzDi@vDc@zDe@vDo@|Dc@vGu@vMuAdYkD|AQ\\jFF|@Dh@vDg@AQtAQh@KvAi@vBmA^YjAuAfAuBp@yCHm@HoCLwDn@yHd@wHNgIH}ELuJLuCdAiKXoEHaAb@}Bz@{Bv@kARQ\\Uv@WpAMzAKnAUn@EdGYvB?nAJz@NrA^nCrArBfAn@ThB\\tBDtAOlA]`BaAlAgAdAaBrAuBpB_CfAs@hAa@lC]~FW~F]xAAtAJvBJjBXrDz@tBd@pBd@lCn@hK`CzEx@jAV|Ap@~A`ArGfFtA`AjCnA`Bh@fCd@fDRtAB`EUf@Gb@IfDs@nA[`Aa@r@[nBcAb@Q`D_BvAu@bGuC`@U|BwA~F{B~D}AzGyBhDeApKsCnH{BdJsCzGcBjOuC|Dq@zAa@tAe@~@e@jDqB|IwGzAw@jCcAbBa@~GaA|Fy@nZ}DjmCi_@xIwAjCWdEI~CHjEj@xCv@nC~@lAf@bAb@zG`DtGdEpDrCvRvQfH|GhDvD|B~C`A`B`AfBhM|TxAzB`AjA~CpCdDpBhMrFlCz@tBb@lANpCTxB?l[gAx\\oArQ}@dCYnCi@~Cy@rFoBrHiDjBi@~@YfA]tCm@vEo@bUoAnEYxDe@jEw@nGyAlE}@be@_L`E}@nEoAjBm@j@WfBw@pEyCtCaC`CeCzEwGfE{HpHyMvMsUjXgf@fKuQht@spAfGwKvFaKvBgEnBaFrAcF|@wEj@eE^wEP{DHcIvA_oBXkD\\yBfAoE~@cCt_@_d@lh@al@pQaSfMkNvEoFvImJd]u_@nFuFrBoBpKcJfVuT`B{Av[{YpAeAn@e@pRwQPOzBwBjA}@pAy@^c@xBwBzDoDhByA`Am@xA_BpLwKbFiErM_MjBaBrOqNdGiGzUcYbNgP`LeN~A{B~GmH|EwFhMmOrE_FzE_G|BkC~DyExSgV`_@gc@nWsZtEwFdE_HpBoEbBgFrC_NzCyOnDmRbAkFdBiHhDeLfEcMzKs\\lAwExBuIb@sBbAcGfAcIpAeKD{@tCuf@^qFzFy}@n@oIv@iH`BqLvAmHrCcM~AkFbCuGdG{MjNmYpDaHlLyUbQk^pRe`@vImQ~_@aw@dQ{]nKcTvCyF|Ok\\~JyRfCyDvBqC~CiD~EgFxIkJdPaQrZ{[nq@ct@lUqVfOgPdEeFlNwSvFmIR[HOr@]b@Ql@AZJx@bAJRJV?VIf@G`@VHz@P|@GfBOJMjJe@|WuBpAG"
+         },
+         "summary" : "US-101 S",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

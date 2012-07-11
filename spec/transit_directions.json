@@ -1,0 +1,494 @@
+{
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 37.787570,
+               "lng" : -122.029780
+            },
+            "southwest" : {
+               "lat" : 37.377590,
+               "lng" : -122.426270
+            }
+         },
+         "copyrights" : "Map data ©2012 Google",
+         "legs" : [
+            {
+               "arrival_time" : {
+                  "text" : "7:51pm",
+                  "time_zone" : "America/Los_Angeles",
+                  "value" : 1341888671
+               },
+               "departure_time" : {
+                  "text" : "5:49pm",
+                  "time_zone" : "America/Los_Angeles",
+                  "value" : 1341881395
+               },
+               "distance" : {
+                  "text" : "46.7 mi",
+                  "value" : 75076
+               },
+               "duration" : {
+                  "text" : "1 hour 38 mins",
+                  "value" : 5853
+               },
+               "end_address" : "668 N Rengstorff Ave, Mountain View, CA 94043, USA",
+               "end_location" : {
+                  "lat" : 37.412120,
+                  "lng" : -122.092360
+               },
+               "start_address" : "1525 Sutter St, San Francisco, CA 94109, USA",
+               "start_location" : {
+                  "lat" : 37.786990,
+                  "lng" : -122.426270
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 417
+                     },
+                     "duration" : {
+                        "text" : "5 mins",
+                        "value" : 278
+                     },
+                     "end_location" : {
+                        "lat" : 37.78740000000001,
+                        "lng" : -122.421840
+                     },
+                     "html_instructions" : "Walk to Van Ness Ave & Sutter St",
+                     "polyline" : {
+                        "points" : "ugseFdkfjVe@qFKcB]kFc@yH`@E?J"
+                     },
+                     "start_location" : {
+                        "lat" : 37.786990,
+                        "lng" : -122.426270
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "0.2 mi",
+                              "value" : 398
+                           },
+                           "duration" : {
+                              "text" : "4 mins",
+                              "value" : 266
+                           },
+                           "end_location" : {
+                              "lat" : 37.787570,
+                              "lng" : -122.421810
+                           },
+                           "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eSutter St\u003c/b\u003e toward \u003cb\u003eGough St\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "ugseFdkfjVe@qFKcB]kFc@yH"
+                           },
+                           "start_location" : {
+                              "lat" : 37.786990,
+                              "lng" : -122.426270
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "62 ft",
+                              "value" : 19
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 12
+                           },
+                           "end_location" : {
+                              "lat" : 37.78740000000001,
+                              "lng" : -122.421840
+                           },
+                           "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eVan Ness Ave\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "ikseFhoejV`@E?J"
+                           },
+                           "start_location" : {
+                              "lat" : 37.787570,
+                              "lng" : -122.421810
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "2.8 mi",
+                        "value" : 4568
+                     },
+                     "duration" : {
+                        "text" : "24 mins",
+                        "value" : 1452
+                     },
+                     "end_location" : {
+                        "lat" : 37.777110,
+                        "lng" : -122.395140
+                     },
+                     "html_instructions" : "Bus towards Caltrain",
+                     "polyline" : {
+                        "points" : "gjseFnoejVAS`AK|AUzAQfAKTC|ASzASJApASzAO|AQzAShAMPC~AOxAW~AQzAQ`BShAMbHy@fAMXEzAQvDe@~ASdAMTCx@K`L_Ck@]eEuFKYl@y@d@o@hA}AvAmBf@q@p@{@`B{Bx@gAj@w@hE}Fj@w@fE}F_AoAyB}C_ByB}AuBm@{@sBsCw@eA[a@{@kAGI[e@iDuEsAkB_@g@s@aA}AsBuAoBwAmBc@m@q@}@yAqBoD_Fk@u@uHgKFKlF_HbFwGNE"
+                     },
+                     "start_location" : {
+                        "lat" : 37.78740000000001,
+                        "lng" : -122.421840
+                     },
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 37.7771090,
+                              "lng" : -122.3951350
+                           },
+                           "name" : "4th St & Townsend St"
+                        },
+                        "arrival_time" : {
+                           "text" : "6:19pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1341883140
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 37.7873960,
+                              "lng" : -122.4218380
+                           },
+                           "name" : "Van Ness Ave & Sutter St"
+                        },
+                        "departure_time" : {
+                           "text" : "5:54pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1341881688
+                        },
+                        "headsign" : "Caltrain",
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "San Francisco Municipal Transportation Agency",
+                                 "url" : "http://www.sfmta.com/"
+                              }
+                           ],
+                           "name" : "Van Ness",
+                           "short_name" : "47",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw/6/bus.png",
+                              "name" : "Bus",
+                              "type" : "BUS"
+                           }
+                        },
+                        "num_stops" : 19
+                     },
+                     "travel_mode" : "TRANSIT"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "338 ft",
+                        "value" : 103
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 103
+                     },
+                     "end_location" : {
+                        "lat" : 37.77644000000001,
+                        "lng" : -122.394320
+                     },
+                     "html_instructions" : "Walk to San Francisco Caltrain Station",
+                     "polyline" : {
+                        "points" : "}iqeFrh`jVdCcD"
+                     },
+                     "start_location" : {
+                        "lat" : 37.777110,
+                        "lng" : -122.395140
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "338 ft",
+                              "value" : 103
+                           },
+                           "duration" : {
+                              "text" : "2 mins",
+                              "value" : 103
+                           },
+                           "end_location" : {
+                              "lat" : 37.77644000000001,
+                              "lng" : -122.394320
+                           },
+                           "polyline" : {
+                              "points" : "}iqeFrh`jVdCcD"
+                           },
+                           "start_location" : {
+                              "lat" : 37.777110,
+                              "lng" : -122.395140
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "38.8 mi",
+                        "value" : 62451
+                     },
+                     "duration" : {
+                        "text" : "48 mins",
+                        "value" : 2880
+                     },
+                     "end_location" : {
+                        "lat" : 37.377590,
+                        "lng" : -122.030120
+                     },
+                     "html_instructions" : "Train towards Tamien (Train 386)",
+                     "polyline" : {
+                        "points" : "weqeFnc`jV?PrHxKzJfP`CxBdCr@vBAfAUdJcMrGwLhDsEzEcEdCsAfDaAtAMbDW`DIjDWnDIvBGtDAbCInA?`B?fCj@vMbA~ENjBF`CN~CP~EVbDRdGd@bEVzFf@fBLjEXbF`@hCZtBR`Mr@|CX|ADpDTjDd@hC`@vCd@|BRvDTzAAxIPvGb@xGd@pDTxPlAhJhC|I~BfDz@bDjAjM`DrDv@rDn@pADvBf@tL~DdEp@lDl@hJZfDAvDAxE@~P@fG@|N?pNAbKI~CUbAMtF{@lDy@tGaCpIeEhBqAdDgCtC}BpH_GfHyFrVuR~DeDnCaB~BmAvBq@xB]`B[jGAjCF`Dn@pDjAjEjCnK`KtEnElKxJpCpCvF~EzJ`KrEjElTrStFbF`@`@bChC~DrDbA|@|AnAnL|IvD|C`HjEtAv@`GdC`DbAnJjBjKZzH@fDCtBArBC`C@`D?hGKjHK|@?`CGlDe@x@S`IqDlCqAnKeFbGyCfGcDbEgC\\WtFuDjEqB~CoAnHsEdCeBpGmEdCaB|CyB~CyBdFqDdG}DnDqC|AwAjGoGrCoC~DiE~CgDzF_G|JeKnJqJtG{GvGuGDElEuEjFmFrDkE|DcHfCkH`CiHtDuLdAeDzGkTlCeIrE_OzEeOnF}PdHaUdG_SpGoR`EcNdD_K~GmTd@yAhDaLjDwKtDcLpI_XxAmFtBoFdCeGp@_AtB_EnCyDxFiHhGeHzIwJRUvFsGxHmI~JaLlFaGxJyK`HsHpJiKfD_CbH_DhNwFtBy@dFeCdIqFnGeFvJ_IxHiGnDqC`EcDhNkLdKcJ~DwDbFqElEyExBmCrEsGbFsHvFoJdHqLtHkMlBmDpBaDxFuH|LkPnI{K|BqC|IaLzHuJfJsNjEqGbKgMhDeEpEiF~IsK|FaH`F}F`EuEfFkGlFsGhMsOlKeMpI_KzIiKlK_NjGmKxG{LtGwLzG_MfHoMdCwEf@aAjHuMzH}NvFsKpGiLpEkIdF}IzBgErI{OxDmHbHgMlFaK|KkS~FwK|FoKxFsK~FwK`CeEdKiR`FmJ~I{OvJuQjJcQjC_FtEqIpIqOnGmLjIeO|GeMlDcHzEqHpIwNhBkDFKhEoH|C{FhCiGvCuGpCsFtEsI|FmKvHiNzHqN~CyF|HsNhH}MpAcCnHaN|FqKtHsN~HwNhDgGbJyPtDaHlG}KvFkKhHmMjHuMzFsKtDcHfN_WlJoQnDkGzCgGnCaGbE_NfJe[bMwb@pDyLrHeWpG{ThI}XxCcKfKy]rEyObFqPtEyOlF{UbMui@~Io_@vDoQ|E}SpF}U~FuV|FiV?AfCbA"
+                     },
+                     "start_location" : {
+                        "lat" : 37.77644000000001,
+                        "lng" : -122.394320
+                     },
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 37.3775890,
+                              "lng" : -122.0301160
+                           },
+                           "name" : "Sunnyvale Caltrain Station"
+                        },
+                        "arrival_time" : {
+                           "text" : "7:21pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1341886860
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 37.77643930,
+                              "lng" : -122.3943230
+                           },
+                           "name" : "San Francisco Caltrain Station"
+                        },
+                        "departure_time" : {
+                           "text" : "6:33pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1341883980
+                        },
+                        "headsign" : "Tamien (Train 386)",
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "Caltrain",
+                                 "phone" : "(800) 660-4287",
+                                 "url" : "http://www.caltrain.com/"
+                              }
+                           ],
+                           "name" : "Bullet",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw/6/rail.png",
+                              "name" : "Train",
+                              "type" : "HEAVY_RAIL"
+                           }
+                        },
+                        "num_stops" : 5
+                     },
+                     "travel_mode" : "TRANSIT"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "364 ft",
+                        "value" : 111
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 111
+                     },
+                     "end_location" : {
+                        "lat" : 37.378180,
+                        "lng" : -122.031130
+                     },
+                     "html_instructions" : "Walk to Evelyn & Frances",
+                     "polyline" : {
+                        "points" : "}hccFf_ygVuBhE"
+                     },
+                     "start_location" : {
+                        "lat" : 37.377590,
+                        "lng" : -122.030120
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "364 ft",
+                              "value" : 111
+                           },
+                           "duration" : {
+                              "text" : "2 mins",
+                              "value" : 111
+                           },
+                           "end_location" : {
+                              "lat" : 37.378180,
+                              "lng" : -122.031130
+                           },
+                           "polyline" : {
+                              "points" : "}hccFf_ygVuBhE"
+                           },
+                           "start_location" : {
+                              "lat" : 37.377590,
+                              "lng" : -122.030120
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "4.6 mi",
+                        "value" : 7337
+                     },
+                     "duration" : {
+                        "text" : "16 mins",
+                        "value" : 960
+                     },
+                     "end_location" : {
+                        "lat" : 37.411750,
+                        "lng" : -122.092860
+                     },
+                     "html_instructions" : "Bus towards 32 WB San Antonio Shopping Center",
+                     "polyline" : {
+                        "points" : "slccFpeygVeZ|FgTsEgEzhAmWb^{S`S{FrGcCpHkGvb@_Hzh@qJjh@mSzIyOtU}Mv]_DlWuJn`@"
+                     },
+                     "start_location" : {
+                        "lat" : 37.378180,
+                        "lng" : -122.031130
+                     },
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 37.41174860,
+                              "lng" : -122.09286410
+                           },
+                           "name" : "Rengstorff & Middlefield"
+                        },
+                        "arrival_time" : {
+                           "text" : "7:50pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1341888600
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 37.3781790,
+                              "lng" : -122.03113230
+                           },
+                           "name" : "Evelyn & Frances"
+                        },
+                        "departure_time" : {
+                           "text" : "7:34pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1341887640
+                        },
+                        "headsign" : "32 WB San Antonio Shopping Center",
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "VTA",
+                                 "url" : "http://www.vta.org/"
+                              }
+                           ],
+                           "name" : "SN Antonio Shop Ctr - STA Clara TC",
+                           "short_name" : "32",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw/6/bus.png",
+                              "name" : "Bus",
+                              "type" : "BUS"
+                           }
+                        },
+                        "num_stops" : 15
+                     },
+                     "travel_mode" : "TRANSIT"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "292 ft",
+                        "value" : 89
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 69
+                     },
+                     "end_location" : {
+                        "lat" : 37.412120,
+                        "lng" : -122.092360
+                     },
+                     "html_instructions" : "Walk to 668 N Rengstorff Ave, Mountain View, CA 94043, USA",
+                     "polyline" : {
+                        "points" : "m~icFjgehVH@?ABc@Di@w@O_@EE?"
+                     },
+                     "start_location" : {
+                        "lat" : 37.411750,
+                        "lng" : -122.092860
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "118 ft",
+                              "value" : 36
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 26
+                           },
+                           "end_location" : {
+                              "lat" : 37.411650,
+                              "lng" : -122.092470
+                           },
+                           "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eW Middlefield Rd\u003c/b\u003e toward \u003cb\u003eN Rengstorff Ave\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "m~icFjgehVH@?ABc@Di@"
+                           },
+                           "start_location" : {
+                              "lat" : 37.411750,
+                              "lng" : -122.092860
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "174 ft",
+                              "value" : 53
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 43
+                           },
+                           "end_location" : {
+                              "lat" : 37.412120,
+                              "lng" : -122.092360
+                           },
+                           "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eN Rengstorff Ave\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "y}icF|dehVw@O_@EE?"
+                           },
+                           "start_location" : {
+                              "lat" : 37.411650,
+                              "lng" : -122.092470
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  }
+               ],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "ugseFdkfjVq@uIaAeP`@E?JAS`AKxDg@|AOvG}@~IcApBSxAW~AQ|De@lJgAtJkAtFq@`L_Ck@]eEuFKYrAiB`DkEtFqHhNkRwJ}M_OiSiOsSkRoWtFkHbFwGNEdCcD?PrHxKzJfP`CxBdCr@vBAfAUdJcMrGwLhDsEzEcEdCsAfDaAxFe@`DIjDWfHQtDAbCIpD?fCj@vMbAjIVdTlAhM|@bJt@nLz@~Fn@`Mr@|CX|ADpDTtHfAvCd@|BRvDTzAAxIPvGb@jMz@xPlAhJhCdOzDbDjAjM`DrDv@rDn@pADvBf@tL~DdEp@lDl@hJZ~ICxWBdW@pNAbKI~CUbAMtF{@lDy@tGaCpIeEnGyEbn@mf@~DeDnCaB~BmAvBq@zEy@jGAjCF`Dn@pDjAjEjCnK`KbRhQpCpCvF~EzJ`KrEjElTrStFbFdDjDbGpFlOlLvD|C`HjEtAv@`GdC`DbAnJjBjKZzH@|GEtFA`D?hGKhJK`CGlDe@x@S`IqD|OwHbGyCfGcD`F_DtFuDjEqB~CoAnHsEvKsHbH{EdKkHdG}DnDqC|AwAjGoGrCoC~DiEzKgLlVwVlPqPrE{EjFmFrDkE|DcHfCkH`CiHtDuL`JqYlCeIrE_OjMca@jPai@pGoR`EcNdMm`@nE{N`J{XpI_XxAmFzFuNp@_AtB_EnCyDxFiHdR}SjGiHxToVfR{SrS}TfD_CbH_D~QqHdFeCdIqFfSePhN{KjToQdKcJ~DwDbFqElEyExBmCrEsGbFsHvFoJzQ}ZlBmDpBaDvTaZnI{K|BqCxSwWfJsNjEqGlPmSpP}R~M_P`EuEfFkGvTgX~UeYzIiKlK_NjGmKxG{LpPwZlLgTrIwOrPq[bNuVdF}IzBgElOiYbHgMlFaK|Sc`@vNcX~FwK`CeEfRw]~I{OvJuQvNcXbc@ww@|GeMlDcHzEqHpIwNpBwDhEoH|C{FhCiGvCuGpCsFtEsItPwZzMkVh^wp@rPe[hN_WxO{YlG}KvFkKtQc\\pLwTfN_WlJoQnDkGzCgGnCaGbE_NjX}~@dN_e@zQyn@`P}i@vLka@tEyOlF{UbMui@~Io_@vDoQ|E}SpNsm@|FkVfCbAuBhEeZ|FgTsEgEzhAmWb^{S`S{FrGcCpHkGvb@_Hzh@qJjh@mSzIyOtU}Mv]_DlWuJn`@H@Be@Di@w@Oe@E"
+         },
+         "warnings" : [
+            "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+         ],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

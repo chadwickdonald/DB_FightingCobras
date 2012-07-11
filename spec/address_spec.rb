@@ -13,8 +13,8 @@ describe Address do
   end
 
   it "should have an instance variable called address" do
-    @address.address.should eq "123 Fake St., San Francisco, CA 94110"
-    @address2.address.should eq "1600 Pennsylvania Ave., Washington, DC 12345"
+    @address.to_s.should eq "123 Fake St., San Francisco, CA 94110"
+    @address2.to_s.should eq "1600 Pennsylvania Ave., Washington, DC 12345"
   end
 
   it "should have a #google_s method" do

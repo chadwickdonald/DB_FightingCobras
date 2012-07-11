@@ -1,10 +1,13 @@
 class Address
-  attr_reader :address
-  def initialize(address)
-    @address = address
+  def initialize(location)
+    @location = location
   end
 
   def google_s
-    return @address.split(' ').join('+')
+    return @location.split(' ').join('+')
+  end
+
+  def to_s
+    @location
   end
 end
