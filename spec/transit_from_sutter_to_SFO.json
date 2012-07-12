@@ -1,0 +1,406 @@
+{
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 37.786990,
+               "lng" : -122.3840
+            },
+            "southwest" : {
+               "lat" : 37.615220,
+               "lng" : -122.469080
+            }
+         },
+         "copyrights" : "Map data ©2012 Google",
+         "legs" : [
+            {
+               "arrival_time" : {
+                  "text" : "4:23pm",
+                  "time_zone" : "America/Los_Angeles",
+                  "value" : 1342135416
+               },
+               "departure_time" : {
+                  "text" : "3:23pm",
+                  "time_zone" : "America/Los_Angeles",
+                  "value" : 1342131829
+               },
+               "distance" : {
+                  "text" : "16.5 mi",
+                  "value" : 26532
+               },
+               "duration" : {
+                  "text" : "55 mins",
+                  "value" : 3302
+               },
+               "end_address" : "San Francisco International Airport (SFO), San Bruno Ave E, San Francisco, CA 94128, USA",
+               "end_location" : {
+                  "lat" : 37.61687000000001,
+                  "lng" : -122.3840
+               },
+               "start_address" : "1525 Sutter St, San Francisco, CA 94109, USA",
+               "start_location" : {
+                  "lat" : 37.786990,
+                  "lng" : -122.426270
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 407
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 266
+                     },
+                     "end_location" : {
+                        "lat" : 37.78485000000001,
+                        "lng" : -122.428160
+                     },
+                     "html_instructions" : "Walk to Geary Blvd & Laguna St",
+                     "polyline" : {
+                        "points" : "ugseFdkfjVJrAh@hIzAQzASvC_@NANCBf@@?"
+                     },
+                     "start_location" : {
+                        "lat" : 37.786990,
+                        "lng" : -122.426270
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "0.1 mi",
+                              "value" : 184
+                           },
+                           "duration" : {
+                              "text" : "2 mins",
+                              "value" : 109
+                           },
+                           "end_location" : {
+                              "lat" : 37.786720,
+                              "lng" : -122.428340
+                           },
+                           "html_instructions" : "Head \u003cb\u003ewest\u003c/b\u003e on \u003cb\u003eSutter St\u003c/b\u003e toward \u003cb\u003eOctavia St\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "ugseFdkfjVJrAh@hI"
+                           },
+                           "start_location" : {
+                              "lat" : 37.786990,
+                              "lng" : -122.426270
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "0.1 mi",
+                              "value" : 206
+                           },
+                           "duration" : {
+                              "text" : "2 mins",
+                              "value" : 147
+                           },
+                           "end_location" : {
+                              "lat" : 37.784880,
+                              "lng" : -122.427960
+                           },
+                           "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eLaguna St\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "_fseFbxfjVzAQzASvC_@NANC"
+                           },
+                           "start_location" : {
+                              "lat" : 37.786720,
+                              "lng" : -122.428340
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "56 ft",
+                              "value" : 17
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 10
+                           },
+                           "end_location" : {
+                              "lat" : 37.78485000000001,
+                              "lng" : -122.428160
+                           },
+                           "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGeary Blvd\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "ozreFvufjVBf@@?"
+                           },
+                           "start_location" : {
+                              "lat" : 37.784880,
+                              "lng" : -122.427960
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.1 mi",
+                        "value" : 1822
+                     },
+                     "duration" : {
+                        "text" : "7 mins",
+                        "value" : 414
+                     },
+                     "end_location" : {
+                        "lat" : 37.78633000000001,
+                        "lng" : -122.408130
+                     },
+                     "html_instructions" : "Bus towards Transbay Terminal",
+                     "polyline" : {
+                        "points" : "izreF~vfjVO@Cc@g@sHc@_JL]NgAb@{@VYVY\\y@Jy@@e@c@{GEm@g@gIi@iIi@gIMuBQaCGqAk@gISeDC_@OcCi@gIGgAImAS_DJA"
+                     },
+                     "start_location" : {
+                        "lat" : 37.78485000000001,
+                        "lng" : -122.428160
+                     },
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 37.7863310,
+                              "lng" : -122.4081280
+                           },
+                           "name" : "O'Farrell St & Powell St"
+                        },
+                        "arrival_time" : {
+                           "text" : "3:35pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1342132500
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 37.7848540,
+                              "lng" : -122.4281550
+                           },
+                           "name" : "Geary Blvd & Laguna St"
+                        },
+                        "departure_time" : {
+                           "text" : "3:28pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1342132086
+                        },
+                        "headsign" : "Transbay Terminal",
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "San Francisco Municipal Transportation Agency",
+                                 "url" : "http://www.sfmta.com/"
+                              }
+                           ],
+                           "name" : "Geary Limited",
+                           "short_name" : "38L",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw/6/bus.png",
+                              "name" : "Bus",
+                              "type" : "BUS"
+                           }
+                        },
+                        "num_stops" : 3
+                     },
+                     "travel_mode" : "TRANSIT"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 186
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 186
+                     },
+                     "end_location" : {
+                        "lat" : 37.784990,
+                        "lng" : -122.406860
+                     },
+                     "html_instructions" : "Walk to Powell St.",
+                     "polyline" : {
+                        "points" : "qcseFxybjVjG}F"
+                     },
+                     "start_location" : {
+                        "lat" : 37.78633000000001,
+                        "lng" : -122.408130
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "0.1 mi",
+                              "value" : 186
+                           },
+                           "duration" : {
+                              "text" : "3 mins",
+                              "value" : 186
+                           },
+                           "end_location" : {
+                              "lat" : 37.784990,
+                              "lng" : -122.406860
+                           },
+                           "polyline" : {
+                              "points" : "qcseFxybjVjG}F"
+                           },
+                           "start_location" : {
+                              "lat" : 37.78633000000001,
+                              "lng" : -122.408130
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "14.4 mi",
+                        "value" : 23242
+                     },
+                     "duration" : {
+                        "text" : "30 mins",
+                        "value" : 1800
+                     },
+                     "end_location" : {
+                        "lat" : 37.61590,
+                        "lng" : -122.392530
+                     },
+                     "html_instructions" : "Metro rail towards San Francisco Int'l Airport",
+                     "polyline" : {
+                        "points" : "e{reFzqbjVba@bj@lyA`d@`oAsFxwBr`BjcAfrAbbBlfCfeCyP|~BeiCbdDonDpgC}qC"
+                     },
+                     "start_location" : {
+                        "lat" : 37.784990,
+                        "lng" : -122.406860
+                     },
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 37.61590,
+                              "lng" : -122.3925340
+                           },
+                           "name" : "San Francisco Int'l Airport"
+                        },
+                        "arrival_time" : {
+                           "text" : "4:13pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1342134780
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 37.7849910,
+                              "lng" : -122.4068570
+                           },
+                           "name" : "Powell St."
+                        },
+                        "departure_time" : {
+                           "text" : "3:43pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1342132980
+                        },
+                        "headsign" : "San Francisco Int'l Airport",
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "Bay Area Rapid Transit",
+                                 "url" : "http://www.bart.gov/"
+                              }
+                           ],
+                           "color" : "#ffff33",
+                           "name" : "Pittsburg/Bay Point - SFIA/Millbrae",
+                           "url" : "http://www.bart.gov/schedules/bylineresults.aspx?route=1",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw/6/metro.png",
+                              "local_icon" : "//maps.gstatic.com/mapfiles/transit/iw/6/us-ca-bart.png",
+                              "name" : "Metro rail",
+                              "type" : "SUBWAY"
+                           }
+                        },
+                        "num_stops" : 10
+                     },
+                     "travel_mode" : "TRANSIT"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 875
+                     },
+                     "duration" : {
+                        "text" : "11 mins",
+                        "value" : 636
+                     },
+                     "end_location" : {
+                        "lat" : 37.61687000000001,
+                        "lng" : -122.3840
+                     },
+                     "html_instructions" : "Walk to San Francisco International Airport (SFO), San Bruno Ave E, San Francisco, CA 94128, USA",
+                     "polyline" : {
+                        "points" : "kzqdFhx_jVfCa@_@sCu@qCMw@CMCQA?EYE_@?AGe@AI?EEYWuBM}@AMk@kAMMk@m@GGq@y@KIc@]_@YECAC]c@MOEGM]ISCMGYEO?GAe@A]@G@a@@GF]DQDMPe@BINuABY@I\\kABCXo@@ALEPGNEFCB??A"
+                     },
+                     "start_location" : {
+                        "lat" : 37.61590,
+                        "lng" : -122.392530
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "0.4 mi",
+                              "value" : 717
+                           },
+                           "duration" : {
+                              "text" : "8 mins",
+                              "value" : 509
+                           },
+                           "end_location" : {
+                              "lat" : 37.617590,
+                              "lng" : -122.385390
+                           },
+                           "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "kzqdFhx_jVfCa@_@sCu@qCMw@CMCQA?EYE_@?AGe@AI?EEYWuBM}@AMk@kAMMk@m@GGq@y@KIc@]_@YECAC]c@MOEGM]ISCMGYEO?GAe@A]@G@a@@GF]DQDMPe@BI"
+                           },
+                           "start_location" : {
+                              "lat" : 37.61590,
+                              "lng" : -122.392530
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "0.1 mi",
+                              "value" : 158
+                           },
+                           "duration" : {
+                              "text" : "2 mins",
+                              "value" : 127
+                           },
+                           "end_location" : {
+                              "lat" : 37.61687000000001,
+                              "lng" : -122.3840
+                           },
+                           "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "}drdFtk~iVNuABY@I\\kABCXo@@ALEPGNEFCB??A"
+                           },
+                           "start_location" : {
+                              "lat" : 37.617590,
+                              "lng" : -122.385390
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  }
+               ],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "ugseFdkfjVt@|KvDe@fDa@NCBf@M@k@wIc@_JL]NgAb@{@n@s@\\y@Jy@@e@c@{Gm@uJsBi[s@yKWeEkAaRS_DJAjG}Fba@bj@lyA`d@`oAsFxwBr`BjcAfrAbbBlfCfeCyP|~BeiCbdDonDpgC}qCfCa@_@sCu@qCQeAEQSaB_@_DOkAk@kAMMs@u@}@cAkA_Ak@s@Se@[kAAsABi@Lo@Vs@R_BDc@`@oAZq@^MZK"
+         },
+         "warnings" : [
+            "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+         ],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
