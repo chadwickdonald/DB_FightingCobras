@@ -1,7 +1,7 @@
 require 'sinatra'
 # Sinatra::Application.environment = :test
 # Bundler.require :default, Sinatra::Application.environment
-require './src/ui.rb'
+require './ui.rb'
 require 'rspec'
 require 'capybara'
 require 'capybara/dsl'

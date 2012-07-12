@@ -20,7 +20,7 @@ class Manager
                     :fastest => ""}
     return_hash[:fastest] = fastest
     return_hash[:cheapest] = cheapest
-    return return_hash
+    return_hash
   end
 
   private
@@ -31,8 +31,8 @@ class Manager
     sensor = "&sensor=false"
     mode = "&mode=#{mode_of_transportation}"
     url = google + origin + destination + sensor + mode
-    file = open(url) { |json_file| JSON.parse(json_file.read) }
-    puts file.inspect
+    file = open(url).read
+    JSON.parse(file)
   end
 
   def get_results
