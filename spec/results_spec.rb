@@ -11,7 +11,7 @@ require 'open-uri'
 describe "initialization" do
   before :each do
     @driving_hash = JSON.parse(File.read('./driving_from_hayward_to_sm.json'))
-    @results = Drive_or_bart::Results.new(@driving_hash, "Driving")
+    @results = Drive_or_bart::Results.new(@driving_hash, "Driving", 10)
   end
 
   it "is an instance of" do
@@ -22,7 +22,7 @@ end
 describe "driving parsing" do
   before :all do
     @driving_hash = JSON.parse(File.read('./driving_from_SF_to_LA.json'))
-    @results = Drive_or_bart::Results.new(@driving_hash,"Driving")
+    @results = Drive_or_bart::Results.new(@driving_hash,"Driving", 10)
   end
 
   it "should know the total travel time" do
@@ -47,19 +47,19 @@ describe "it should calculate driving costs" do
 
   it "should know when it's driving over a $5 toll bridge" do
     @driving_hash = JSON.parse(File.read('./driving_from_hayward_to_sm.json'))
-    @results = Drive_or_bart::Results.new(@driving_hash,"Driving")
+    @results = Drive_or_bart::Results.new(@driving_hash,"Driving", 10)
     @results.toll_amount.should == 500
   end
 
   it "should know if it is driving over either the Golden Gate or Bay Bridge toll portions" do
     @driving_hash = JSON.parse(File.read('./driving_from_salsalito_to_folsom_st.json'))
-    @results = Drive_or_bart::Results.new(@driving_hash,"Driving")
+    @results = Drive_or_bart::Results.new(@driving_hash,"Driving", 10)
     @results.toll_amount.should == 600
   end
 
   it "should know the total driving cost assuming 20 mpg and 3.679 dollars/gallon rounded down to 2 decimals" do
     @driving_hash = JSON.parse(File.read('./driving_from_salsalito_to_folsom_st.json'))
-    @results = Drive_or_bart::Results.new(@driving_hash,"Driving")
+    @results = Drive_or_bart::Results.new(@driving_hash,"Driving", 10)
     @results.stub(:open).and_return(File.read('./bart_from_dbrk_to_embr.xml'))
     @results.total_cost == 789
   end
@@ -68,7 +68,7 @@ end
 describe "transit parsing" do
   before :all do
     @transit_hash = JSON.parse(File.read('./transit_from_california_to_broadway.json'))
-    @results = Drive_or_bart::Results.new(@transit_hash,"Transit")
+    @results = Drive_or_bart::Results.new(@transit_hash,"Transit", 0)
   end
 
   it "should know the total travel time including time spent waiting at bus stops" do
@@ -95,7 +95,7 @@ end
 describe "transit cost estimation" do
   before :all do
     @transit_hash = JSON.parse(File.read('./transit_from_sutter_to_SFO.json'))
-    @results = Drive_or_bart::Results.new(@transit_hash,"Transit")
+    @results = Drive_or_bart::Results.new(@transit_hash,"Transit", 0)
   end
 
   it "should know the cost of a trip involving a bart and muni" do
