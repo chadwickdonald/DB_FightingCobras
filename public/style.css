@@ -4988,5 +4988,9 @@ a.badge:hover {
     font-size: 18px !important;
     line-height:20px !important;
     padding: 15px !important;
-    width: 460px !important;
+    width: 100% !important;
+}
+
+label{
+    font-size:18px !important;
 }
