@@ -3,14 +3,14 @@ require 'crack'
 require 'open-uri'
 require 'nokogiri'
 require_relative 'bart'
-
+require_relative 'ferry'
 
 module Drive_or_bart
   class Results
-    #attr_reader :travel_time
     def initialize(json_file)
       @json_file = json_file
       @muni_check = false
+      @ferry = Ferry.new(@json_file)
       @bart = Bart.new(@json_file)
       @bart_stations = @bart.stations
     end
@@ -58,37 +58,14 @@ module Drive_or_bart
       @muni_check
     end
 
-    def ferry_fare
-      @ferry_fare = 0
-      @json_file["routes"][0]["legs"][0]["steps"].each do |hash|
-        if hash["travel_mode"] == "TRANSIT"
-          if hash["html_instructions"].include?("Ferry towards") == true
-            if hash["transit_details"]["line"]["agencies"][0]["name"] == "Baylink"
-              @ferry_fare = 1300
-            elsif hash["transit_details"]["line"]["agencies"][0]["name"] == "Golden Gate Ferry"
-              if hash["transit_details"]["arrival_stop"]["name"] == "Sausalito Ferry Terminal"
-                @ferry_fare = 925
-              elsif hash["transit_details"]["arrival_stop"]["name"] == "Sausalito Ferry Terminal"
-                @ferry_fare = 925
-              else
-                @ferry_fare = 875
-              end
-            end
-          end
-        end
-      end
-      @ferry_fare
-    end
-
     def total_cost
-      cost = driving_cost + ferry_fare + @bart.fare
+      cost = driving_cost + @ferry.fare + @bart.fare
       if muni_checker == true
         cost = cost + 200
       else
         cost
       end
     end
-
 
     private
 
@@ -122,7 +99,6 @@ module Drive_or_bart
         end
       end
     end
-
 
   end
 end
