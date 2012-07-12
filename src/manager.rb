@@ -5,11 +5,12 @@ require 'json'
 
 class Manager
   attr_reader :origin, :destination, :driving_results, :transit_results
-  def initialize(origin, destination, other_preferences = {})
+  def initialize(origin, destination, parking_cost = 0, other_preferences = {})
     @origin = Address.new(origin)
     @destination = Address.new(destination)
     @driving_results = nil
     @transit_results = nil
+    @parking_cost = parking_cost.to_f * 100
   end
 
   def get_best

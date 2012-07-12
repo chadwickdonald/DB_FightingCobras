@@ -11,7 +11,7 @@ require_relative 'src/manager'
   end
 
   get '/results' do
-    @a=Manager.new(params["origin"], params["destination"])
+    @a=Manager.new(params["origin"], params["destination"], params["parking_cost"])
     results = @a.get_best
       if results[:fastest] == results[:driving]
         @fastest = {:mode => "Driving", :result => results[:driving]}
