@@ -38,6 +38,15 @@ class Manager
     JSON.parse(file)
   end
 
+  def valid_address?(mode_of_transportation)
+    file = document_load(mode_of_transportation)
+    if file[:status] != "ZERO_RESULTS"
+      true
+    else
+      false
+    end
+  end
+
   def get_results
     @driving_results = Drive_or_bart::Results.new(document_load("driving"),"Driving", @parking_cost)
     @transit_results = Drive_or_bart::Results.new(document_load("transit"),"Transit", @parking_cost)
