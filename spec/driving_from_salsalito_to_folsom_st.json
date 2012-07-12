@@ -1,0 +1,440 @@
+{
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 37.85919000000001,
+               "lng" : -122.414930
+            },
+            "southwest" : {
+               "lat" : 37.76130000000001,
+               "lng" : -122.485070
+            }
+         },
+         "copyrights" : "Map data ©2012 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "10.3 mi",
+                  "value" : 16610
+               },
+               "duration" : {
+                  "text" : "26 mins",
+                  "value" : 1583
+               },
+               "end_address" : "Folsom St, San Francisco, CA, USA",
+               "end_location" : {
+                  "lat" : 37.76130000000001,
+                  "lng" : -122.414930
+               },
+               "start_address" : "Sausalito, CA, USA",
+               "start_location" : {
+                  "lat" : 37.8590,
+                  "lng" : -122.485070
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "82 ft",
+                        "value" : 25
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 2
+                     },
+                     "end_location" : {
+                        "lat" : 37.85919000000001,
+                        "lng" : -122.484920
+                     },
+                     "html_instructions" : "Head \u003cb\u003enortheast\u003c/b\u003e on \u003cb\u003ePine St\u003c/b\u003e toward \u003cb\u003eBridgeway\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "wiafFtzqjVe@]"
+                     },
+                     "start_location" : {
+                        "lat" : 37.8590,
+                        "lng" : -122.485070
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.9 mi",
+                        "value" : 1388
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 152
+                     },
+                     "end_location" : {
+                        "lat" : 37.849870,
+                        "lng" : -122.480740
+                     },
+                     "html_instructions" : "Take the 1st \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eBridgeway\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "}jafFvyqjVnAwD`A_EXqAPs@Re@Zo@f@}@vAmBp@iAXi@`@q@NUPUDEXU|A_AZQlCqA`@WNGTAlECnLFRBdAh@jAf@x@j@PLRFp@RLFJJFLBRAhC"
+                     },
+                     "start_location" : {
+                        "lat" : 37.85919000000001,
+                        "lng" : -122.484920
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 320
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 59
+                     },
+                     "end_location" : {
+                        "lat" : 37.847020,
+                        "lng" : -122.480690
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003e2nd St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "up_fFr_qjV|DB`E@bCBZ@FADEJM"
+                     },
+                     "start_location" : {
+                        "lat" : 37.849870,
+                        "lng" : -122.480740
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "499 ft",
+                        "value" : 152
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 37
+                     },
+                     "end_location" : {
+                        "lat" : 37.84697000000001,
+                        "lng" : -122.478970
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eSouth St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "{~~eFh_qjVBK@I@oG?S@]"
+                     },
+                     "start_location" : {
+                        "lat" : 37.847020,
+                        "lng" : -122.480690
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.2 mi",
+                        "value" : 1994
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 129
+                     },
+                     "end_location" : {
+                        "lat" : 37.833750,
+                        "lng" : -122.483610
+                     },
+                     "html_instructions" : "\u003cb\u003eSouth St\u003c/b\u003e turns slightly \u003cb\u003eright\u003c/b\u003e and becomes \u003cb\u003eAlexander Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "q~~eFptpjVFQHMt@}@l@u@PMPIJA|B_@r@IxBGrA`@FBtBf@\\H@@LBx@AFA^G~EkBl@Sn@Gd@@h@HZFZP^RVV^h@Xj@Vv@BRF`@BZIfJAbAJ`ARdAPl@\\l@\\d@f@d@\\Rj@Tf@Jd@DfACH?bACz@CZ@\\Dj@Nf@Rd@ZVZR\\Zn@BHDHp@~ANV@BPXBDRTRLXHXB^?XGXKTOPQR]Vi@Pa@R]`A}A"
+                     },
+                     "start_location" : {
+                        "lat" : 37.84697000000001,
+                        "lng" : -122.478970
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "3.3 mi",
+                        "value" : 5361
+                     },
+                     "duration" : {
+                        "text" : "5 mins",
+                        "value" : 301
+                     },
+                     "end_location" : {
+                        "lat" : 37.80360,
+                        "lng" : -122.453140
+                     },
+                     "html_instructions" : "Merge onto \u003cb\u003eUS-101 S\u003c/b\u003e via the ramp to \u003cb\u003eSan Francisco\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePartial toll road\u003c/div\u003e",
+                     "polyline" : {
+                        "points" : "}k|eFpqqjVbAsBHWb@}AzBmFn@}@LO@?RUjAo@PKDALGp@SdAWp@K`AGJAB?HA`I_AzsBwKjAQVIjA_@l@Yl@a@dAiAJIRS|@{@jAqAt@y@@?t@y@rBeCFIHIPUdF{F|@gA^e@TY`@kAp@}BViANk@FWRs@ZqAd@cBBSBI@KL{@BUPgANkA^kCPuA@CPqA\\eCLkALaALcAj@_EVkBR{AFq@Fq@Bm@Bm@?s@?s@Ag@Ci@Em@Em@Iq@Km@]kBa@{BCEWsAAGEY[_Ba@wBe@aCc@cCO}@O{@S_BOaBQmBQmC"
+                     },
+                     "start_location" : {
+                        "lat" : 37.833750,
+                        "lng" : -122.483610
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 550
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 40
+                     },
+                     "end_location" : {
+                        "lat" : 37.80108000000001,
+                        "lng" : -122.448210
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eDoyle Dr\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "ooveFbskjVAgA?u@Cu@?KDgABm@@ALu@Pq@Ne@Zo@`@o@b@g@t@o@lAgAz@_Ar@cAjBoC"
+                     },
+                     "start_location" : {
+                        "lat" : 37.80360,
+                        "lng" : -122.453140
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 384
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 30
+                     },
+                     "end_location" : {
+                        "lat" : 37.79882000000001,
+                        "lng" : -122.44490
+                     },
+                     "html_instructions" : "Continue onto \u003cb\u003eRichardson Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "w_veFhtjjVf@y@bBkCzAgCdAcBZi@|AkCPWHU"
+                     },
+                     "start_location" : {
+                        "lat" : 37.80108000000001,
+                        "lng" : -122.448210
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 203
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 16
+                     },
+                     "end_location" : {
+                        "lat" : 37.798960,
+                        "lng" : -122.442630
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eLombard St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "squeFr_jjVFWDWBYAUAWi@mI"
+                     },
+                     "start_location" : {
+                        "lat" : 37.79882000000001,
+                        "lng" : -122.44490
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.1 mi",
+                        "value" : 1770
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 226
+                     },
+                     "end_location" : {
+                        "lat" : 37.78324000000001,
+                        "lng" : -122.439550
+                     },
+                     "html_instructions" : "Take the 2nd \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eDivisadero St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "orueFlqijVhD_@xDe@xDe@xDe@xDe@|De@jAObBUlDa@xDa@~BWp@KnDa@~Ca@XD|De@zDe@vDe@zDc@zAS|AOZC"
+                     },
+                     "start_location" : {
+                        "lat" : 37.798960,
+                        "lng" : -122.442630
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.8 mi",
+                        "value" : 1331
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 115
+                     },
+                     "end_location" : {
+                        "lat" : 37.78532000000001,
+                        "lng" : -122.424670
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eGeary Blvd\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "gpreFd~hjVAWM{AIe@e@cBKg@Go@AU_AsMOkBASAIC[_@iGGaA?CGy@WkEG{@C_@GaAYaFM_CUqEg@oHe@mFG}@Au@"
+                     },
+                     "start_location" : {
+                        "lat" : 37.78324000000001,
+                        "lng" : -122.439550
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.0 mi",
+                        "value" : 1594
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 251
+                     },
+                     "end_location" : {
+                        "lat" : 37.771740,
+                        "lng" : -122.420360
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eGough St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "g}reFdafjVzDe@vDo@~AO|ASTCjC[TC~AQ|AQ|Dc@~AMzAQzDe@zAQ|ASzAQzAQzAQhBWpAQ|AQ|ASn@MPCLC`@_@@ANONUt@gAz@iApBuC"
+                     },
+                     "start_location" : {
+                        "lat" : 37.78532000000001,
+                        "lng" : -122.424670
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 196
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 51
+                     },
+                     "end_location" : {
+                        "lat" : 37.769990,
+                        "lng" : -122.42020
+                     },
+                     "html_instructions" : "\u003cb\u003eGough St\u003c/b\u003e turns slightly \u003cb\u003eright\u003c/b\u003e and becomes \u003cb\u003eOtis St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "khpeFffejV`G[l@EP?D@L?@?D?"
+                     },
+                     "start_location" : {
+                        "lat" : 37.771740,
+                        "lng" : -122.420360
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 175
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 31
+                     },
+                     "end_location" : {
+                        "lat" : 37.769810,
+                        "lng" : -122.418220
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003e13th St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "m}oeFfeejV@u@BaAPkC@WD}@Bm@?C"
+                     },
+                     "start_location" : {
+                        "lat" : 37.769990,
+                        "lng" : -122.42020
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 527
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 61
+                     },
+                     "end_location" : {
+                        "lat" : 37.765180,
+                        "lng" : -122.417490
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eS Van Ness Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "i|oeFzxdjV@?V]FIJIf@UZBv@@p@Az@ETKjH[nESrBK"
+                     },
+                     "start_location" : {
+                        "lat" : 37.769810,
+                        "lng" : -122.418220
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 192
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 33
+                     },
+                     "end_location" : {
+                        "lat" : 37.765320,
+                        "lng" : -122.415310
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003e16th St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "k_oeFhtdjVMyEMyE"
+                     },
+                     "start_location" : {
+                        "lat" : 37.765180,
+                        "lng" : -122.417490
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 448
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 49
+                     },
+                     "end_location" : {
+                        "lat" : 37.76130000000001,
+                        "lng" : -122.414930
+                     },
+                     "html_instructions" : "Take the 2nd \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eFolsom St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "g`oeFtfdjVzBKfEQ~H]~CO"
+                     },
+                     "start_location" : {
+                        "lat" : 37.765320,
+                        "lng" : -122.415310
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "wiafFtzqjVe@]nAwDzAqGPs@Re@bAmBvAmBp@iAz@{A`@k@^[xBqAnDiBNGTAlECnLFRBdAh@jAf@x@j@PLRF~@ZRXBRAhC~JD~CDLGNYDkIP_@bBsBb@WhCa@r@IxBGzAd@bDv@`AC^G~EkBl@Sn@Gd@@h@HZFZP^RVVx@tAVv@BRJ|@KjLJ`ARdAPl@\\l@\\d@f@d@hAh@lAPpAC~BGx@FrAb@d@ZVZn@lAHR`AvBR\\VZRLXHx@Br@Sf@a@j@gAd@_A`A}AbAsBl@uBzBmFn@}@NORUjAo@VM~@[vBc@lAILA`I_AzsBwKjAQVIjA_@l@Yl@a@dAiA^]`EgEzDsEvFqG|AmBTY`@kAp@}BViAVcAn@eCh@wBDUr@eFdAwHfAwIbAkHZmCJ_BBaBA{AIwAO_Bi@yC_A}EiBsJs@aEc@{Ca@oEQmCAgACkBDsADo@^gBj@uA`@o@b@g@bCwBz@_Ar@cArCiE~DsGpEqHPm@Hq@Cm@i@mIhD_@rJkArJkAzOmBxHy@`Fm@~Ca@XDxJkAlPmBZCAWWaCq@kCIeAsA}QwAmUeAuRg@oHe@mFIsBzDe@vDo@|Dc@vGu@zGu@zD_@pM}ArJmAzDe@`AQLC`@_@PQdA}AlD_FnHa@V@N?D?@u@TmEFuABq@X]RSf@UZBhB?z@ETKzNo@rBKMyEMyEzBKfOo@~CO"
+         },
+         "summary" : "US-101 S",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

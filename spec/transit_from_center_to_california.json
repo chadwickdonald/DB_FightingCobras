@@ -1,0 +1,288 @@
+{
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 37.870350,
+               "lng" : -122.267230
+            },
+            "southwest" : {
+               "lat" : 37.79244000000001,
+               "lng" : -122.405960
+            }
+         },
+         "copyrights" : "Map data ©2012 Google",
+         "legs" : [
+            {
+               "arrival_time" : {
+                  "text" : "5:14pm",
+                  "time_zone" : "America/Los_Angeles",
+                  "value" : 1341965691
+               },
+               "departure_time" : {
+                  "text" : "4:38pm",
+                  "time_zone" : "America/Los_Angeles",
+                  "value" : 1341963533
+               },
+               "distance" : {
+                  "text" : "12.2 mi",
+                  "value" : 19556
+               },
+               "duration" : {
+                  "text" : "30 mins",
+                  "value" : 1806
+               },
+               "end_address" : "717 California St, San Francisco, CA 94108, USA",
+               "end_location" : {
+                  "lat" : 37.79250,
+                  "lng" : -122.405960
+               },
+               "start_address" : "2120 Center St, Berkeley, CA 94704, USA",
+               "start_location" : {
+                  "lat" : 37.870350,
+                  "lng" : -122.267760
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "177 ft",
+                        "value" : 54
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 38
+                     },
+                     "end_location" : {
+                        "lat" : 37.86987000000001,
+                        "lng" : -122.268040
+                     },
+                     "html_instructions" : "Walk to Downtown Berkeley",
+                     "polyline" : {
+                        "points" : "upcfFnlgiV~AL?h@"
+                     },
+                     "start_location" : {
+                        "lat" : 37.870350,
+                        "lng" : -122.267760
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "177 ft",
+                              "value" : 54
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 38
+                           },
+                           "end_location" : {
+                              "lat" : 37.86987000000001,
+                              "lng" : -122.268040
+                           },
+                           "html_instructions" : "Head \u003cb\u003esouth\u003c/b\u003e on \u003cb\u003eShattuck Ave\u003c/b\u003e toward \u003cb\u003eAllston Way\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "upcfFnlgiV~AL?h@"
+                           },
+                           "start_location" : {
+                              "lat" : 37.870350,
+                              "lng" : -122.267760
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "11.5 mi",
+                        "value" : 18525
+                     },
+                     "duration" : {
+                        "text" : "22 mins",
+                        "value" : 1320
+                     },
+                     "end_location" : {
+                        "lat" : 37.792980,
+                        "lng" : -122.396740
+                     },
+                     "html_instructions" : "Metro rail towards Millbrae",
+                     "polyline" : {
+                        "points" : "umcfFfngiVhhBzIvxC}Nl_CfJhY`OiErnC`hAn}R"
+                     },
+                     "start_location" : {
+                        "lat" : 37.86987000000001,
+                        "lng" : -122.268040
+                     },
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 37.7929760,
+                              "lng" : -122.3967420
+                           },
+                           "name" : "Embarcadero"
+                        },
+                        "arrival_time" : {
+                           "text" : "5:02pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1341964920
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 37.8698670,
+                              "lng" : -122.2680450
+                           },
+                           "name" : "Downtown Berkeley"
+                        },
+                        "departure_time" : {
+                           "text" : "4:40pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1341963600
+                        },
+                        "headsign" : "Millbrae",
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "Bay Area Rapid Transit",
+                                 "url" : "http://www.bart.gov/"
+                              }
+                           ],
+                           "color" : "#ff0000",
+                           "name" : "Richmond - Daly City/Millbrae",
+                           "url" : "http://www.bart.gov/schedules/bylineresults.aspx?route=7",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw/6/metro.png",
+                              "local_icon" : "//maps.gstatic.com/mapfiles/transit/iw/6/us-ca-bart.png",
+                              "name" : "Metro rail",
+                              "type" : "SUBWAY"
+                           }
+                        },
+                        "num_stops" : 6
+                     },
+                     "travel_mode" : "TRANSIT"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "318 ft",
+                        "value" : 97
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 97
+                     },
+                     "end_location" : {
+                        "lat" : 37.793710,
+                        "lng" : -122.396140
+                     },
+                     "html_instructions" : "Walk to California St & Drumm St",
+                     "polyline" : {
+                        "points" : "cmteFrr`jVqCwB"
+                     },
+                     "start_location" : {
+                        "lat" : 37.792980,
+                        "lng" : -122.396740
+                     },
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "318 ft",
+                              "value" : 97
+                           },
+                           "duration" : {
+                              "text" : "2 mins",
+                              "value" : 97
+                           },
+                           "end_location" : {
+                              "lat" : 37.793710,
+                              "lng" : -122.396140
+                           },
+                           "polyline" : {
+                              "points" : "cmteFrr`jVqCwB"
+                           },
+                           "start_location" : {
+                              "lat" : 37.792980,
+                              "lng" : -122.396740
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.5 mi",
+                        "value" : 880
+                     },
+                     "duration" : {
+                        "text" : "6 mins",
+                        "value" : 351
+                     },
+                     "end_location" : {
+                        "lat" : 37.79250,
+                        "lng" : -122.405960
+                     },
+                     "html_instructions" : "Cable car towards Van Ness Av.",
+                     "polyline" : {
+                        "points" : "uqteFzn`jV@BFn@ZpEB^XjEB^VhEB^XhEB^TfDP~BB^XtEJrAB^\\vFFx@K@"
+                     },
+                     "start_location" : {
+                        "lat" : 37.793710,
+                        "lng" : -122.396140
+                     },
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 37.7925040,
+                              "lng" : -122.4059580
+                           },
+                           "name" : "California St & Grant Ave"
+                        },
+                        "arrival_time" : {
+                           "text" : "5:14pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1341965691
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 37.793710,
+                              "lng" : -122.396140
+                           },
+                           "name" : "California St & Drumm St"
+                        },
+                        "departure_time" : {
+                           "text" : "5:09pm",
+                           "time_zone" : "America/Los_Angeles",
+                           "value" : 1341965340
+                        },
+                        "headsign" : "Van Ness Av.",
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "San Francisco Municipal Transportation Agency",
+                                 "url" : "http://www.sfmta.com/"
+                              }
+                           ],
+                           "short_name" : "CALIFORNIA",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw/6/cablecar.png",
+                              "name" : "Cable car",
+                              "type" : "CABLE_CAR"
+                           }
+                        },
+                        "num_stops" : 7
+                     },
+                     "travel_mode" : "TRANSIT"
+                  }
+               ],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "upcfFnlgiV~AL?h@hhBzIvxC}Nl_CfJhY`OiErnC`hAn}RqCwB@Bb@`Gx@tMrBzZ`@vGFx@K@"
+         },
+         "warnings" : [
+            "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+         ],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

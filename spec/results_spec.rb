@@ -20,7 +20,6 @@ end
 
 describe "driving parsing" do
   before :all do
-    # stub(:open).and_return(JSON.parse(File.read('./driving_from_SF_to_LA.json')))
     @driving_hash = JSON.parse(File.read('./driving_from_SF_to_LA.json'))
     @results = Drive_or_bart::Results.new(@driving_hash)
   end
@@ -46,32 +45,29 @@ end
 describe "it should calculate driving costs" do
 
   it "should know when it's driving over a $5 toll bridge" do
-    url = "http://maps.googleapis.com/maps/api/directions/json?origin=Hayward,+CA&destination=San+Mateo,+CA&sensor=false"
-    @file = open(url) { |json_file| JSON.parse(json_file.read) }
-    @results = Drive_or_bart::Results.new(@file)
+    @driving_hash = JSON.parse(File.read('./driving_from_hayward_to_sm.json'))
+    @results = Drive_or_bart::Results.new(@driving_hash)
     @results.toll_amount.should == 500
   end
 
   it "should know if it is driving over either the Golden Gate or Bay Bridge toll portions" do
-    url = "http://maps.googleapis.com/maps/api/directions/json?origin=Salsalito,+CA&destination=Folsom+St,+CA&sensor=false"
-    @file = open(url) { |json_file| JSON.parse(json_file.read) }
-    @results = Drive_or_bart::Results.new(@file)
+    @driving_hash = JSON.parse(File.read('./driving_from_salsalito_to_folsom_st.json'))
+    @results = Drive_or_bart::Results.new(@driving_hash)
     @results.toll_amount.should == 600
   end
 
   it "should know the total driving cost assuming 20 mpg and 3.679 dollars/gallon rounded down to 2 decimals" do
-    url = "http://maps.googleapis.com/maps/api/directions/json?origin=Salsalito,+CA&destination=Folsom+St,+CA&sensor=false"
-    @file = open(url) { |json_file| JSON.parse(json_file.read) }
-    @results = Drive_or_bart::Results.new(@file)
+    @driving_hash = JSON.parse(File.read('./driving_from_salsalito_to_folsom_st.json'))
+    @results = Drive_or_bart::Results.new(@driving_hash)
+    @results.stub(:open).and_return(File.read('./bart_from_dbrk_to_embr.xml'))
     @results.total_cost == 789
   end
 end
 
 describe "transit parsing" do
   before :all do
-    url = "http://maps.googleapis.com/maps/api/directions/json?origin=717+California+St.,+San+Francisco,+CA+94108&destination=1960+Broadway+San+Francisco,+California+94109&mode=transit&sensor=false"
-    @file = open(url) { |json_file| JSON.parse(json_file.read) }
-    @results = Drive_or_bart::Results.new(@file)
+    @transit_hash = JSON.parse(File.read('./transit_from_california_to_broadway.json'))
+    @results = Drive_or_bart::Results.new(@transit_hash)
   end
 
   it "should know the total travel time" do
@@ -98,9 +94,8 @@ end
 describe "bart api" do
 
   before :all do
-    url = "http://maps.googleapis.com/maps/api/directions/json?origin=2120+Center+St.,+Berkeley,+CA&destination=717+California+St,+CA&mode=transit&sensor=false"
-    @file = open(url) { |json_file| JSON.parse(json_file.read) }
-    @results = Drive_or_bart::Results.new(@file)
+    @transit_hash = JSON.parse(File.read('./transit_from_center_to_california.json'))
+    @results = Drive_or_bart::Results.new(@transit_hash)
   end
 
   it "should return the correct bart stations" do
@@ -108,6 +103,7 @@ describe "bart api" do
 
   end
   it "should handle the bart api" do
+    @results.stub(:open).and_return(File.read('./bart_from_dbrk_to_embr.xml'))
     @results.bart_fare.should == 370
   end
 
