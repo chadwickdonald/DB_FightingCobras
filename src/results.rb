@@ -64,6 +64,7 @@ module Drive_or_bart
       cost = driving_cost + @ferry.fare + @bart.fare + @parking
       cost += 200 if muni_checker == true
       cost -= driving_cost if @mode == "Transit"
+      cost -= @parking if @mode == "Transit"
       cost
     end
 
