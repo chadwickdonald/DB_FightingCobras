@@ -8,19 +8,23 @@
 <!-- <%=params.inspect%> -->
   <br />
   <div class="row-fluid">
-    <div class="span12">
+    <div class="span12 alert alert-success">
       <h2>Results between <%= @a.origin %> & <%= @a.destination %></h2>
       <br />
     </div>
   </div>
   <div class="row-fluid" style ="margin-bottom:20px">
     <div class="span6">
-      <h3>The fastest route is <%=@fastest[:mode] %> and takes this much time:
-      <%= @fastest[:result].travel_time / 60 %> minutes and costs <%= @fastest[:result].total_cost / 100.0 %>.</h3>
+      <span class="label label-success">Fastest</span>
+      <h1>Fastest route: <%=@fastest[:mode] %></H1>
+      <h3>Travel Time: <%= @fastest[:result].travel_time / 60 %> minutes</h3>
+      <h3>Total cost: $<%= (@fastest[:result].total_cost / 100.00) %></h3>
       </div>
     <div class="span6">
-      <h3>The cheapest route is <%=@cheapest[:mode] %> and takes this much time:
-      <%= @cheapest[:result].travel_time / 60 %> minutes and costs <%= @cheapest[:result].total_cost / 100.0 %>.</h3>
+      <span class="label label-info">Cheapest</span>
+      <h1>Cheapest route: <%=@cheapest[:mode] %>
+      <h3>Travel Time: <%= @cheapest[:result].travel_time / 60 %> minutes</h3>
+      <h3>Total Cost: $<%= (@cheapest[:result].total_cost / 100.00) %></h3>
     </div>
   </div>
   <a class = "btn btn-inverse btn-large" href="/">Test out Another Route</a>
