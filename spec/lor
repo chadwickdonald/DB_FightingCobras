@@ -1,0 +1,15 @@
+[31mF[0m
+
+Failures:
+
+  1) ui homepage should have a header that states the title of the app
+     [31mFailure/Error:[0m [31mfind('h1').should have_content "Bart or Drive?"[0m
+       [31mexpected #has_content?("Bart or Drive?") to return true, got false[0m
+[36m     # ./ui_spec.rb:24:in `block (3 levels) in <top (required)>'[0m
+
+Finished in 0.31025 seconds
+[31m1 example, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./ui_spec.rb:21[0m [36m# ui homepage should have a header that states the title of the app[0m
