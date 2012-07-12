@@ -7,7 +7,8 @@ require_relative 'ferry'
 
 module Drive_or_bart
   class Results
-    def initialize(json_file)
+    def initialize(json_file, mode)
+      @mode = mode
       @json_file = json_file
       @muni_check = false
       @ferry = Ferry.new(@json_file)
@@ -60,11 +61,9 @@ module Drive_or_bart
 
     def total_cost
       cost = driving_cost + @ferry.fare + @bart.fare
-      if muni_checker == true
-        cost = cost + 200
-      else
-        cost
-      end
+      cost += 200 if muni_checker == true
+      cost -= driving_cost if @mode == "Transit"
+      cost
     end
 
     private
