@@ -108,3 +108,10 @@ describe "bart api" do
   end
 
 end
+
+describe "ferry fare" do
+end
+
+
+# weather_viewer and traffic_getter call internet
+

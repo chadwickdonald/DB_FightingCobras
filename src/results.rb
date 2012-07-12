@@ -1,6 +1,7 @@
 require 'json'
 require 'crack'
 require 'open-uri'
+require 'nokogiri'
 
 
 module Drive_or_bart
@@ -75,8 +76,13 @@ module Drive_or_bart
 
     def bart_fare
       bart_stops
-      bart_xml = Crack::XML.parse(open("http://api.bart.gov/api/sched.aspx?cmd=fare&orig=" + @first_stop +"&dest=" + @second_stop + "&key=MW9S-E7SL-26DU-VV8V"))
-      bart_xml["root"]["trip"]["fare"].to_f * 100
+      if @first_stop == "" && @second_stop == ""
+        fare = 0
+      else
+        bart_xml = Crack::XML.parse(open("http://api.bart.gov/api/sched.aspx?cmd=fare&orig=" + @first_stop +"&dest=" + @second_stop + "&key=MW9S-E7SL-26DU-VV8V"))
+        fare = bart_xml["root"]["trip"]["fare"].to_f * 100
+      end
+      fare
     end
 
     ######## SPIKE CODE START ########################
@@ -104,10 +110,11 @@ module Drive_or_bart
     end
 
     def total_cost
+      cost = driving_cost + ferry_fare + bart_fare
       if muni_checker == true
-        driving_cost + ferry_fare + bart_fare + 200
+        cost = cost + 200
       else
-        driving_cost + ferry_fare + bart_fare
+        cost
       end
     end
 
@@ -122,12 +129,10 @@ module Drive_or_bart
       weather_xml = Crack::XML.parse(open(url))
       today_weather << weather_xml["xml_api_reply"]["weather"]["current_conditions"]["condition"]["data"].downcase.inspect
       today_weather << weather_xml["xml_api_reply"]["weather"]["forecast_conditions"][0]["condition"]["data"].downcase.inspect
-
       today_weather.each do |term|
         term.delete!('\"')
         puts term
       end
-
       puts today_weather.inspect
       puts bad_weather.inspect
       puts (bad_weather & today_weather).inspect
@@ -136,7 +141,6 @@ module Drive_or_bart
       else
         puts "TRANSIT!"
       end
-
     end
 
     def traffic_getter

@@ -24,13 +24,15 @@ describe Manager do
   context "#get_best" do
     before :each do
       @manager.stub(:document_load).and_return(JSON.parse(File.read('./driving_directions.json')), JSON.parse(File.read('./transit_directions.json')) )
+
     end
 
     it "should have a get_best method" do
       @manager.should respond_to :get_best
     end
 
-    it "should returns a hash with at least one Results object in it" do
+    it "should return a hash with at least one Results object in it" do
+       #@manager.get_best[:driving].stub(:open).and_return(File.read('./bart_from_dbrk_to_embr.xml'))
        @manager.get_best[:driving].should be_an_instance_of Drive_or_bart::Results
      end
 
