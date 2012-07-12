@@ -10,7 +10,8 @@ FakeWeb.allow_net_connect = false
 
 describe "initialization" do
   before :each do
-    @results = Drive_or_bart::Results.new("json_file")
+    @driving_hash = JSON.parse(File.read('./driving_from_hayward_to_sm.json'))
+    @results = Drive_or_bart::Results.new(@driving_hash)
   end
 
   it "is an instance of" do
@@ -91,27 +92,5 @@ describe "transit parsing" do
   end
 end
 
-describe "bart api" do
 
-  before :all do
-    @transit_hash = JSON.parse(File.read('./transit_from_center_to_california.json'))
-    @results = Drive_or_bart::Results.new(@transit_hash)
-  end
-
-  it "should return the correct bart stations" do
-    @results.bart_stops.should == "dbrk embr"
-
-  end
-  it "should handle the bart api" do
-    @results.stub(:open).and_return(File.read('./bart_from_dbrk_to_embr.xml'))
-    @results.bart_fare.should == 370
-  end
-
-end
-
-describe "ferry fare" do
-end
-
-
-# weather_viewer and traffic_getter call internet
 

@@ -2,6 +2,7 @@ require 'json'
 require 'crack'
 require 'open-uri'
 require 'nokogiri'
+require_relative 'bart'
 
 
 module Drive_or_bart
@@ -10,7 +11,8 @@ module Drive_or_bart
     def initialize(json_file)
       @json_file = json_file
       @muni_check = false
-      bart_hash
+      @bart = Bart.new(@json_file)
+      @bart_stations = @bart.stations
     end
 
     def travel_time
@@ -56,37 +58,6 @@ module Drive_or_bart
       @muni_check
     end
 
-    def bart_stops
-      @json_file["routes"][0]["legs"][0]["steps"].each do |hash|
-        if hash["travel_mode"] == "TRANSIT"
-          if hash["html_instructions"].include?("Metro") == true
-            @first_stop = @bart_stations[hash["transit_details"]["departure_stop"]["name"]]
-            @second_stop = @bart_stations[hash["transit_details"]["arrival_stop"]["name"]]
-          end
-        end
-      end
-      if @first_stop == nil
-        @first_stop = ""
-      end
-      if @second_stop == nil
-        @second_stop = ""
-      end
-      @first_stop + " " + @second_stop
-    end
-
-    def bart_fare
-      bart_stops
-      if @first_stop == "" && @second_stop == ""
-        fare = 0
-      else
-        bart_xml = Crack::XML.parse(open("http://api.bart.gov/api/sched.aspx?cmd=fare&orig=" + @first_stop +"&dest=" + @second_stop + "&key=MW9S-E7SL-26DU-VV8V"))
-        fare = bart_xml["root"]["trip"]["fare"].to_f * 100
-      end
-      fare
-    end
-
-    ######## SPIKE CODE START ########################
-
     def ferry_fare
       @ferry_fare = 0
       @json_file["routes"][0]["legs"][0]["steps"].each do |hash|
@@ -110,7 +81,7 @@ module Drive_or_bart
     end
 
     def total_cost
-      cost = driving_cost + ferry_fare + bart_fare
+      cost = driving_cost + ferry_fare + @bart.fare
       if muni_checker == true
         cost = cost + 200
       else
@@ -118,43 +89,6 @@ module Drive_or_bart
       end
     end
 
-
-    def weather_viewer
-      #terms from http://stackoverflow.com/questions/1563884/google-weather-api-conditions
-      bad_weather = ["scattered thunderstorms", "showers", "scattered showers", "rain and snow", "light snow", "freezing drizzlse",
-        "chance of rain", "chance of storm", "rain", "chance of snow", "storm", "thunderstorm", "chance of tstorm",
-        "sleet", "snow", "icy", "flurries", "light rain", "snow showers", "ice/snow", "scattered snow showers"]
-      today_weather = []
-      url = "http://www.google.com/ig/api?weather=Mountain+View"
-      weather_xml = Crack::XML.parse(open(url))
-      today_weather << weather_xml["xml_api_reply"]["weather"]["current_conditions"]["condition"]["data"].downcase.inspect
-      today_weather << weather_xml["xml_api_reply"]["weather"]["forecast_conditions"][0]["condition"]["data"].downcase.inspect
-      today_weather.each do |term|
-        term.delete!('\"')
-        puts term
-      end
-      puts today_weather.inspect
-      puts bad_weather.inspect
-      puts (bad_weather & today_weather).inspect
-      if (bad_weather & today_weather).length > 0
-        puts "DRIVE!"
-      else
-        puts "TRANSIT!"
-      end
-    end
-
-    def traffic_getter
-      # scrapes the screen from googlemaps
-      url = "http://maps.google.com/maps?q=San+Jose,+CA+to+717+California+st.,+ca"
-      doc = Nokogiri::HTML(open(url))
-      string = doc.css(".altroute-aux span").first.content
-      number_array = []
-      number_array += string.scan(/\d/).map!{ |i| i.to_i}
-      puts number_array.inspect
-      puts number_array[0] * 60 + number_array[1]
-    end
-
-    ########## SPIKE CODE END ####################
 
     private
 
@@ -189,55 +123,7 @@ module Drive_or_bart
       end
     end
 
-    def bart_hash
-      @bart_stations = {
-        "12th St. Oakland City Center"        => "12th",
-        "16th St. Mission"                    => "16th",
-        "19th St. Oakland"                    => "19th",
-        "24th St. Mission"                    => "24th",
-        "Ashby"                               => "ashb",
-        "Balboa Park"                         => "balb",
-        "Bay Fair (San Leandro)"              => "bayf",
-        "Castro Valley"                       => "cast",
-        "Civic Center"                        => "civc",
-        "Coliseum/Oakland Airport"            => "cols",
-        "Colma"                               => "colm",
-        "Concord"                             => "conc",
-        "Daly City"                           => "daly",
-        "Downtown Berkeley"                   => "dbrk",
-        "Dublin/Pleasanton"                   => "dubl",
-        "El Cerrito del Norte"                => "deln",
-        "El Cerrito Plaza"                    => "plza",
-        "Embarcadero"                         => "embr",
-        "Fremont"                             => "frmt",
-        "Fruitvale"                           => "ftvl",
-        "Glen Park"                           => "glen",
-        "Hayward"                             => "hayw",
-        "Lafayette"                           => "lafy",
-        "Lake Merritt"                        => "lake",
-        "MacArthur"                           => "mcar",
-        "Millbrae"                            => "mlbr",
-        "Montgomery St."                      => "mont",
-        "North Berkeley"                      => "nbrk",
-        "North Concord/Martinez"              => "ncon",
-        "Orinda"                              => "orin",
-        "Pittsburg/Bay Point"                 => "pitt",
-        "Pleasant Hill"                       => "phil",
-        "Powell St."                          => "powl",
-        "Richmond"                            => "rich",
-        "Rockridge"                           => "rock",
-        "San Bruno"                           => "sbrn",
-        "San Francisco Int'l Airport"         => "sfia",
-        "San Leandro"                         => "sanl",
-        "South Hayward"                       => "shay",
-        "South San Francisco"                 => "ssan",
-        "Union City"                          => "ucty",
-        "Walnut Creek"                        => "wcrk",
-        "West Oakland"                        => "woak"
-      }
-    end
-
-
 
   end
 end
+#problem in route_info_founder and travel_time
