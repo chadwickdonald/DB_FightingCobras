@@ -40,7 +40,7 @@ class Manager
 
   def get_results
     @driving_results = Drive_or_bart::Results.new(document_load("driving"),"Driving", @parking_cost)
-    @transit_results = Drive_or_bart::Results.new(document_load("transit"),"Transit")
+    @transit_results = Drive_or_bart::Results.new(document_load("transit"),"Transit", @parking_cost)
   end
 
   def fastest
