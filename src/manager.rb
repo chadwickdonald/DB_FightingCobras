@@ -13,14 +13,16 @@ class Manager
   end
 
   def get_best
-    get_results
-    return_hash = { :driving => @driving_results,
-                    :transit => @transit_results,
-                    :cheapest => "",
-                    :fastest => ""}
-    return_hash[:fastest] = fastest
-    return_hash[:cheapest] = cheapest
-    return_hash
+      get_results
+      return_hash = { :driving => @driving_results,
+                      :transit => @transit_results,
+                      :cheapest => "",
+                      :fastest => ""}
+
+      return_hash[:fastest] = fastest
+      return_hash[:cheapest] = cheapest
+      return_hash
+
   end
 
   private

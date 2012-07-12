@@ -13,19 +13,18 @@ require_relative 'src/manager'
   get '/results' do
     @a=Manager.new(params["origin"], params["destination"])
     results = @a.get_best
-    if results[:fastest] == results[:driving]
-      @fastest = {:mode => "Driving", :result => results[:driving]}
-    else
-      @fastest = {:mode => "Public Transit", :result => results[:transit]}
-    end
+      if results[:fastest] == results[:driving]
+        @fastest = {:mode => "Driving", :result => results[:driving]}
+      else
+        @fastest = {:mode => "Public Transit", :result => results[:transit]}
+      end
 
-    if results[:cheapest] == results[:driving]
-      @cheapest = {:mode => "Driving", :result => results[:driving]}
-    else
-      @cheapest = {:mode => "Public Transit", :result => results[:transit]}
-    end
-    #@results = @a.get_best
-    erb :results
+      if results[:cheapest] == results[:driving]
+        @cheapest = {:mode => "Driving", :result => results[:driving]}
+      else
+        @cheapest = {:mode => "Public Transit", :result => results[:transit]}
+      end
+      erb :results
   end
 
   post '/' do

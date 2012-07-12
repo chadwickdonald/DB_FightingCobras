@@ -79,25 +79,25 @@ module Drive_or_bart
       @walk_distance = 0
       @walk_time = 0
       @json_file["routes"][0]["legs"][0]["steps"].each do |hash|
-        if hash["travel_mode"] == "WALKING"
-          @walk_distance += hash["distance"]["value"]
-          @walk_time += hash["duration"]["value"]
+      if hash["travel_mode"] == "WALKING"
+        @walk_distance += hash["distance"]["value"]
+        @walk_time += hash["duration"]["value"]
 
-        elsif hash["travel_mode"] == "DRIVING"
-          if (hash["html_instructions"].include?("toll road") == true) && (hash["html_instructions"].include?("US-101") == true)
-            @toll_amount = 600
-          elsif (hash["html_instructions"].include?("toll road") == true) && (hash["I-80"] == true)
-            @toll_amount = 600
-          elsif (hash["html_instructions"].include?("toll road") == true)
-            @toll_amount = 500
-          end
-        elsif hash["travel_mode"] == "TRANSIT"
-          @transit_counter += 1
-          if hash["transit_details"]["line"]["agencies"][0]["name"] == "San Francisco Municipal Transportation Agency"
-            @muni_check = true
-          end
+      elsif hash["travel_mode"] == "DRIVING"
+        if (hash["html_instructions"].include?("toll road") == true) && (hash["html_instructions"].include?("US-101") == true)
+          @toll_amount = 600
+        elsif (hash["html_instructions"].include?("toll road") == true) && (hash["I-80"] == true)
+          @toll_amount = 600
+        elsif (hash["html_instructions"].include?("toll road") == true)
+          @toll_amount = 500
+        end
+      elsif hash["travel_mode"] == "TRANSIT"
+        @transit_counter += 1
+        if hash["transit_details"]["line"]["agencies"][0]["name"] == "San Francisco Municipal Transportation Agency"
+          @muni_check = true
         end
       end
+    end
     end
 
   end

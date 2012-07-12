@@ -9,13 +9,14 @@
 <body>
 <div class="container">
 <div class="row-fluid">
+  <h4 class="alert">Something seems to be wrong with one of your addresses. Please check them and try again.</h2>
   <h1>Bart or Drive?</h1>
 
 
 
   <form action="/results" method="get">
-  Origin: <br /><input class="input-xlarge" type="text" name="origin" /><br />
-  Destination: <br /><input class="input-xlarge" type="text" name="destination" /><br />
+  Origin: <br /><input class="input-xlarge" type="text" name="origin" value="<%= params["origin"]%>"/><br />
+  Destination: <br /><input class="input-xlarge" type="text" name="destination" value="<%= params["destination"]%>" /><br />
   <button class="btn btn-success btn-large">Bart OR Drive?</button>
   </form>
 </div>

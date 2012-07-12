@@ -21,6 +21,8 @@ section {
   display: block;
 }
 
+
+
 audio,
 canvas,
 video {
@@ -4980,4 +4982,11 @@ a.badge:hover {
 
 .invisible {
   visibility: hidden;
+}
+
+.input-xlarge{
+    font-size: 18px !important;
+    line-height:20px !important;
+    padding: 15px !important;
+    width: 460px !important;
 }
