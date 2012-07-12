@@ -1,6 +1,8 @@
+require 'rubygems'
 require 'sinatra'
 # require_relative 'address'
 # require_relative 'results'
+
 require_relative 'manager'
 
 # class UI
