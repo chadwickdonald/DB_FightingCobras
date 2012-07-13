@@ -51,6 +51,18 @@ describe Manager do
       result_count.should be == 4
     end
   end
+  
+  context "#valid_address?" do
+    @manager_invalid = Manager.new("sdlkafjewoidsjkjf", "weoiajkdsldkdfk23")
+    
+    it "should return true when the address is valid" do
+      @manager.valid_address?("driving").should_eq true
+    end
+    
+    it "should return false when the address is invalid" do
+      @manager_invalid.valid_address?("driving").should_eq false
+    end
+  end
 
   # context "#document_load" do
   #    before :each do
