@@ -4994,3 +4994,7 @@ a.badge:hover {
 label{
     font-size:18px !important;
 }
+
+.brand{
+  color: #fff !important;
+}
