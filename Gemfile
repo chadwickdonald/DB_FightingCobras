@@ -1,5 +1,5 @@
 source "http://rubygems.org"
-gem 'nokogiri', '1.5.2'
+gem 'nokogiri', '1.13.6'
 gem 'json', '1.7.3'
 gem 'crack', '0.3.1'
 gem 'sinatra', '1.3.2'
